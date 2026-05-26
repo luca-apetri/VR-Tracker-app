@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/user/zephyrproject/VR-Tracker-app/app'
+    source-dir: 'C:/Users/user/zephyrproject/VR-Tracker-app/app'
+  board:
+    name: 'nrf52840dk'
+    path:
+     - 'C:/Users/user/zephyrproject/zephyr/boards/nordic/nrf52840dk'
+    qualifiers: 'nrf52840'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/user/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/user/zephyrproject/zephyr/boards/nordic/nrf52840dk/nrf52840dk_nrf52840.dts'
+    include-dirs:
+     - 'C:/Users/user/zephyrproject/modules/hal/ambiq/dts'
+     - 'C:/Users/user/zephyrproject/modules/hal/atmel/include'
+     - 'C:/Users/user/zephyrproject/modules/hal/bouffalolab/include'
+     - 'C:/Users/user/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/user/zephyrproject/modules/hal/gigadevice/include'
+     - 'C:/Users/user/zephyrproject/modules/hal/microchip/include'
+     - 'C:/Users/user/zephyrproject/modules/hal/microchip/dts'
+     - 'C:/Users/user/zephyrproject/modules/hal/nuvoton/dts'
+     - 'C:/Users/user/zephyrproject/modules/hal/nxp/dts'
+     - 'C:/Users/user/zephyrproject/modules/hal/stm32/dts'
+     - 'C:/Users/user/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/user/zephyrproject/zephyr/include'
+     - 'C:/Users/user/zephyrproject/zephyr/include/zephyr'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/common'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/vendor'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/rx'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/x86'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/xtensa'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/sparc'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/riscv'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/posix'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/arm64'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/arm'
+     - 'C:/Users/user/zephyrproject/zephyr/dts/arc'
+     - 'C:/Users/user/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Users/user/zephyrproject/zephyr/boards/nordic/nrf52840dk/nrf52840dk_nrf52840_defconfig'
+     - 'C:/Users/user/zephyrproject/VR-Tracker-app/app/prj.conf'
+     - 'C:/Users/user/zephyrproject/VR-Tracker-app/app/build/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - 'C:/Users/user/zephyrproject/VR-Tracker-app/app/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/user/zephyr-sdk-1.0.1'
+  vendor-specific:
+    nordic:
+      svdfile: 'C:/Users/user/zephyrproject/modules/hal/nordic/nrfx/bsp/stable/mdk/nrf52840.svd'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: 'C:/Users/user/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\ncs\toolchains\b620d30767\opt\bin\Scripts\west build --build-dir c:/Users/user/zephyrproject/VR-Tracker-app/app/build c:/Users/user/zephyrproject/VR-Tracker-app/app --pristine --board nrf52840dk/nrf52840 -- -DNCS_TOOLCHAIN_VERSION=NONE -DCONFIG_DEBUG_THREAD_INFO=y'
+  topdir: 'c:\Users\user\zephyrproject'
+  version: '1.2.0'
